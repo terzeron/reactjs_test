@@ -1,6 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import Example1 from "./Example1";
 
 function formatDate(date) {
     return date.toLocaleDateString();
@@ -36,7 +34,7 @@ const comment = {
     }
 };
 
-function Example2() {
+export default function Example2() {
     return (
         <Comment
             date={comment.date}
@@ -45,9 +43,5 @@ function Example2() {
     );
 }
 
-const root = ReactDOM.createRoot(document.getElementById("root2"));
-root.render(<Example2 />);
-
-export default Example2;
 
 
